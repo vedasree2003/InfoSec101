@@ -1,0 +1,3 @@
+PASSWORD: Ud1d%C?
+WALKTHROUGH: The create_password will first move the address of 0x2400 to r15 . Now, different data is stored into r15 by incrementing a byte at a time. In check_password its basically checking whether the password we entered is the same as the stored one in r15(i.e the data stored in 0x2400). Going to the below given live memory dump we can get the data stored in 0x2400 which is  'Ud1d%C?' or '5564 3164 2543 3f00 0000 0000 0000 0000' in hexadecimal.
+

@@ -1,0 +1,2 @@
+PASSWORD:7b2b77475f233a3a
+WALKTHROUGH: The check_password basically compares password stored in r15 with 2bytes at a time . So , we get 2b7b4777235f3a3a . I tried this but the password was incorrect. Then found that MSP430 uses little-endian which stores right most byte first since this is 16-bit architecture, we need tochange each pair of byte that gives 7b2b77475f233a3a. 
