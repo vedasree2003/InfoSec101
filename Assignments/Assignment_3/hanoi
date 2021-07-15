@@ -1,0 +1,8 @@
+Author: [vedasree](https://github.com/vedasree2003) (vedasree,vedasree2003)
+
+## Walkthrough
+They asked for password to be 8-16 charecters but i did not read that at first. It was a habit to use test as the password. Then when going through code <login> part i found the limit . Checking this password was prolly done using <test_password_valid> but there was no test in that code no flagsplaced so the password that i entered, 'test' was accepted. Then the next one after checking the validity of password is comparing 0x2410 with 0xf6.We can store 16bytes in 0x2400, the next byte was going to 0x2410 so what ever may be our first 16bytes the 17th byte should match with 0xf6. 
+
+## Password
+61616161616161616161616161616161f6
+
